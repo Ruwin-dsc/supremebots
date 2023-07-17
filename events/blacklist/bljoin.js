@@ -18,7 +18,7 @@ module.exports = {
     if (!blacklist) return;
 
     member.send(`Vous ne pouvez pas rejoindre le serveur ${guild.name} car vous êtes sur la blacklist.`).then(m => {
-    if(blacklist === true) return guild.members.cache.get(member.id)?.kick({reason: `Blacklist`})
+    if(blacklist === true) return guild.members.cache.get(member.id)?.ban({reason: `Blacklist`})
     })
  
     }
