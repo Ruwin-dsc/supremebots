@@ -19,22 +19,6 @@ module.exports = {
 
     run: async (client, message, args, color, prefix, footer, commandName) => {
 
+        //A RE FAIRE
 
-    request(`http://localhost:3000/getbuyer/${client.user.id}`, (err, res, body) => {
-        let data = JSON.parse(body).body
-        if(data !== message.author.id) return message.reply("Vous n'êtes pas l'acheteur de ce bot")
-        let config = client.config
-        let buyers = config.buyers
-
-        let embed = new Discord.MessageEmbed()
-        .setColor(color)
-        .setTitle("Liste des buyers")
-        .setDescription(buyers.map(buyer => `<@${buyer}>`).join("\n"))
-        .setFooter(footer)
-        
-        message.channel.send({ embeds: [embed] })
-    
-    })
-
-}
-}
+    }}
