@@ -1,3 +1,3 @@
-discord : sonnyyyyyyyyy, lqhv, 1tsubasa and not.seven
+discord : sonnyyyyyyyyy, lqhv, 1tsubasa and not.seven 
 
-Version du supreme bots corrigée 
+Ancienne version du gestion de supremebots (en cours de correction).
