@@ -93,6 +93,7 @@ if (pass === false) return message.channel.send(`Vous n'avez pas la permission d
             client.db.set(`${m}.${message.guild.id}`, "on")
         })
         client.db.set(`blrank.${message.guild.id}`, "on")
+        client.db.set(`antijoin.${message.guild.id}`, "off")
 
         let Embed = new Discord.MessageEmbed()
         .setColor(color)
@@ -131,6 +132,7 @@ if (pass === false) return message.channel.send(`Vous n'avez pas la permission d
             client.db.set(`${m}.${message.guild.id}`, "max")
         })
         client.db.set(`blrank.${message.guild.id}`, "max")
+        client.db.set(`antijoin.${message.guild.id}`, "off")
 
         let Embed = new Discord.MessageEmbed()
         .setColor(color)
