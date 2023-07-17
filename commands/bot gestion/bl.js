@@ -58,7 +58,7 @@ if (pass === false) return message.channel.send(`Vous n'avez pas la permission d
         let member = JSON.parse(body);
 
         if (member.username === undefined) return message.channel.send(`Cet utilisateur n'existe pas ou est introuvable.`);
-
+        if (client.db.get(`owner_${member.id}`) === true) return message.channel.send(`Impossible de blacklist un owner`)
         if (client.db.get(`blmd_${client.user.id}_${member.id}`) === true) return message.channel.send(`${member.username} est déjà blacklist`)
 
         client.db.push(`bl.${client.user.id}`, member.id)
